@@ -34,7 +34,7 @@ main{
   flex-basis: 25%;
   padding: 10px 15px;
   margin: 20px 0px;
-  text-anchor: center;
+  text-align: center;;
 }
 
 h2{
