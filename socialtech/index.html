@@ -9,9 +9,12 @@
   </head>
   <body>
     <header>
+      <!-- ロゴ -->
       <a href="index.html" id="logo">
         <img src="images/logo.png" alt="トップページに戻る">  
       </a>
+
+      <!-- PC用ナビゲーション -->
       <nav id="nav-pc">
         <ul>
           <li><a href="mission.html">MISSION</a></li>
@@ -22,6 +25,41 @@
           <li><a href="index.html#contact">CONTACT</a></li>
         </ul>
       </nav>
+      <!-- スマホ用メニューボタン -->
+       <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+         <img src="images/button-menu.png" alt="ナビゲーションを開く">
+       </button>
+       <!-- スマホ用ナビゲーション -->
+        <div id="nav-sp">
+          <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+            <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+          </button>
+
+          <nav>
+            <ul>
+              <li>
+                <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+              </li>
+              <li><a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a></li>
+              <li><a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
+              <li><a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUTUS</a></li>
+              <li><a class="menu" href="index.html#vision" onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a></li>
+              <li><a class="menu" href="index.html#company" onclick="document.getElementById('nav-sp').style.display = 'none'">COMPANY</a></li>
+              <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div id="sns">
+            <a href="https://www.facebook.com/sejuku2013">
+              <img src="images/button-facebook.png" alt="Facebookのリンク">
+            </a>
+            <a href="https://twitter.com/ssamuraijuku">
+              <img src="images/button-twitter.png" alt="Twitterのリンク">
+            </a>
+            <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g">
+              <img src="images/button-youtube.png" alt="youtubeのリンク">
+            </a>
+          </div>
+        </div>
     </header>
     <main>
       <article>
@@ -284,11 +322,11 @@
                 <div class="contact-heading">
                   <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
                 </div>
-              </div>
-              <div>
-                <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
-                <input class="radiobutton" type="radio" value="mail" name="contact" ><label>メール</label>
-                <input class="radiobutton" type="radio" value="both" name="contact" ><label>どちらでも</label>
+                <div>
+                  <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
+                  <input class="radiobutton" type="radio" value="mail" name="contact" ><label>メール</label>
+                  <input class="radiobutton" type="radio" value="both" name="contact" ><label>どちらでも</label>
+                </div>
               </div>
               <div>
                 <div class="contact-heading">
@@ -344,5 +382,27 @@
           </section>
       </article>
     </main>
+
+    <footer>
+      <div id="footer-logo">
+        <img src="images/logo-sp.png" alt="SocialTech">
+      </div>
+      <div id="footer-link">
+        <a href="mission.html">MISSION</a>
+        <a href="product.html">PRODUCT</a>
+        <a href="index.html#aboutus">ABOUT US</a>
+        <a href="index.html#vision">VISSION</a>
+        <a href="index.html#company">COMPANY</a>
+        <a href="index.html#contact">CONTACT</a>
+      </div>
+      <div id="sns-footer">
+        <div class="sns-btns">
+          <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Fasebookのリンク"></a>
+          <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+          <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+        </div>
+        <p id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
